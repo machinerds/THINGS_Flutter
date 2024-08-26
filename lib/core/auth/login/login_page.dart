@@ -69,24 +69,30 @@ class _LoginPageState extends TbPageState<LoginPage> {
                         child: Column(
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
-                              Row(children: [
-                                SvgPicture.asset(
-                                    ThingsboardImage.thingsBoardWithTitle,
-                                    height: 25,
-                                    colorFilter: ColorFilter.mode(
-                                        Theme.of(context).primaryColor,
-                                        BlendMode.srcIn),
-                                    semanticsLabel:
-                                        '${S.of(context).logoDefaultValue}')
-                              ]),
+                              Row(
+                                children: [
+                                  SvgPicture.asset(
+                                      ThingsboardImage.thingsBoardWithTitle,
+                                      height: 25,
+                                      colorFilter: ColorFilter.mode(
+                                          Theme.of(context).primaryColor,
+                                          BlendMode.srcIn),
+                                      semanticsLabel:
+                                          '${S.of(context).logoDefaultValue}')
+                                ],
+                                mainAxisAlignment: MainAxisAlignment.end,
+                              ),
                               SizedBox(height: 32),
-                              Row(children: [
-                                Text('${S.of(context).loginNotification}',
-                                    style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 28,
-                                        height: 36 / 28))
-                              ]),
+                              Row(
+                                children: [
+                                  Text('${S.of(context).loginNotification}',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 28,
+                                          height: 36 / 28))
+                                ],
+                                mainAxisAlignment: MainAxisAlignment.end,
+                              ),
                               SizedBox(height: 48),
                               if (tbContext.hasOAuthClients)
                                 _buildOAuth2Buttons(
@@ -102,7 +108,7 @@ class _LoginPageState extends TbPageState<LoginPage> {
                                       padding: const EdgeInsets.symmetric(
                                           vertical: 16),
                                       child: const Center(
-                                        child: Text('LOGIN WITH'),
+                                        child: Text('ورود با'),
                                       ),
                                     ),
                                     Row(
