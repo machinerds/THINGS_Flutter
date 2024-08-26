@@ -76,12 +76,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "emailAuthDescription": m0,
         "emailAuthPlaceholder":
-            MessageLookupByLibrary.simpleMessage("Email code"),
+            MessageLookupByLibrary.simpleMessage("کد ایمیل"),
         "emailInvalidText":
-            MessageLookupByLibrary.simpleMessage("Invalid email format."),
+            MessageLookupByLibrary.simpleMessage(".ایمیل نامعتبر است"),
         "emailRequireText":
-            MessageLookupByLibrary.simpleMessage("Email is required."),
-        "emailStar": MessageLookupByLibrary.simpleMessage("Email *"),
+            MessageLookupByLibrary.simpleMessage(".لطفا ایمیل را وارد کنید"),
+        "emailStar": MessageLookupByLibrary.simpleMessage("ایمیل *"),
         "entityType": MessageLookupByLibrary.simpleMessage("Entity Type"),
         "failureDetails":
             MessageLookupByLibrary.simpleMessage("Failure details"),

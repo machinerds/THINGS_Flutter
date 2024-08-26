@@ -183,7 +183,7 @@ class S {
   /// `Email is required.`
   String get emailRequireText {
     return Intl.message(
-      'Email is required.',
+      '.لطفا ایمیل را وارد کنید',
       name: 'emailRequireText',
       desc: '',
       args: [],
@@ -193,7 +193,7 @@ class S {
   /// `Invalid email format.`
   String get emailInvalidText {
     return Intl.message(
-      'Invalid email format.',
+      '.ایمیل نامعتبر است',
       name: 'emailInvalidText',
       desc: '',
       args: [],
@@ -213,7 +213,7 @@ class S {
   /// `Password`
   String get password {
     return Intl.message(
-      'Password',
+      'رمز عبور',
       name: 'password',
       desc: '',
       args: [],
@@ -223,7 +223,7 @@ class S {
   /// `Password is required.`
   String get passwordRequireText {
     return Intl.message(
-      'Password is required.',
+      '.لطفا رمز عبور را وارد کنید',
       name: 'passwordRequireText',
       desc: '',
       args: [],
@@ -233,7 +233,7 @@ class S {
   /// `Forgot Password?`
   String get passwordForgotText {
     return Intl.message(
-      'Forgot Password?',
+      'رمز عبور را فراموش کردم',
       name: 'passwordForgotText',
       desc: '',
       args: [],
@@ -243,7 +243,7 @@ class S {
   /// `Reset password`
   String get passwordReset {
     return Intl.message(
-      'Reset password',
+      'بازیابی رمز عبور',
       name: 'passwordReset',
       desc: '',
       args: [],
