@@ -194,7 +194,7 @@ abstract class BaseEntitiesWidget<T, P> extends TbContextWidget
 
   @override
   Widget? buildHeading(BuildContext context) => searchMode
-      ? Text('Search results',
+      ? Text('نتایج جستجو',
           style: TextStyle(
               color: Color(0xFFAFAFAF), fontSize: 16, height: 24 / 16))
       : null;

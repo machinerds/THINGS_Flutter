@@ -142,7 +142,7 @@ class _EntitiesListWidgetState<T, P>
                               },
                               style: TextButton.styleFrom(
                                   padding: EdgeInsets.zero),
-                              child: Text('View all'))
+                              child: Text('دیدن همه'))
                         ],
                       ),
                     ),

@@ -117,7 +117,7 @@ class _EntityDetailsPageState<T extends BaseData>
             if (entity != null) {
               return widget.buildEntityDetails(context, entity);
             } else {
-              return Center(child: Text('Requested entity does not exists.'));
+              return Center(child: Text('.مورد درخواست شده وجود ندارد'));
             }
           } else {
             return Center(
@@ -156,10 +156,10 @@ abstract class ContactBasedDetailsPage<T extends ContactBased>
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.max,
             children: [
-              Text('Title', style: labelTextStyle),
+              Text('عنوان', style: labelTextStyle),
               Text(contact.getName(), style: valueTextStyle),
               SizedBox(height: 16),
-              Text('Country', style: labelTextStyle),
+              Text('کشور', style: labelTextStyle),
               Text(contact.country ?? '', style: valueTextStyle),
               SizedBox(height: 16),
               Row(
@@ -171,7 +171,7 @@ abstract class ContactBasedDetailsPage<T extends ContactBased>
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisSize: MainAxisSize.max,
                         children: [
-                          Text('City', style: labelTextStyle),
+                          Text('شهر', style: labelTextStyle),
                           Text(contact.city ?? '', style: valueTextStyle),
                         ],
                       )),
@@ -181,26 +181,26 @@ abstract class ContactBasedDetailsPage<T extends ContactBased>
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisSize: MainAxisSize.max,
                         children: [
-                          Text('State / Province', style: labelTextStyle),
+                          Text('استان / منطقه', style: labelTextStyle),
                           Text(contact.state ?? '', style: valueTextStyle),
                         ],
                       )),
                 ],
               ),
               SizedBox(height: 16),
-              Text('Zip / Postal Code', style: labelTextStyle),
+              Text('کد پستی', style: labelTextStyle),
               Text(contact.zip ?? '', style: valueTextStyle),
               SizedBox(height: 16),
-              Text('Address', style: labelTextStyle),
+              Text('آدرس', style: labelTextStyle),
               Text(contact.address ?? '', style: valueTextStyle),
               SizedBox(height: 16),
-              Text('Address 2', style: labelTextStyle),
+              Text('آدرس دوم', style: labelTextStyle),
               Text(contact.address2 ?? '', style: valueTextStyle),
               SizedBox(height: 16),
-              Text('Phone', style: labelTextStyle),
+              Text('شماره موبایل', style: labelTextStyle),
               Text(contact.phone ?? '', style: valueTextStyle),
               SizedBox(height: 16),
-              Text('Email', style: labelTextStyle),
+              Text('ایمیل', style: labelTextStyle),
               Text(contact.email ?? '', style: valueTextStyle),
             ]));
   }
