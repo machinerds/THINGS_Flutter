@@ -10,7 +10,7 @@ class NoNotificationsFoundWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            'No notifications found',
+            'هیچ اعلانی پیدا نشد',
             style: TextStyle(
               fontWeight: FontWeight.w400,
               fontSize: 16,

@@ -17,26 +17,26 @@ const Map<AlarmSeverity, Color> alarmSeverityColors = {
 };
 
 const Map<AlarmSeverity, String> alarmSeverityTranslations = {
-  AlarmSeverity.CRITICAL: 'Critical',
-  AlarmSeverity.MAJOR: 'Major',
-  AlarmSeverity.MINOR: 'Minor',
-  AlarmSeverity.WARNING: 'Warning',
-  AlarmSeverity.INDETERMINATE: 'Indeterminate',
+  AlarmSeverity.CRITICAL: 'بحرانی',
+  AlarmSeverity.MAJOR: 'بزرگ',
+  AlarmSeverity.MINOR: 'کوچک',
+  AlarmSeverity.WARNING: 'هشدار',
+  AlarmSeverity.INDETERMINATE: 'متوسط',
 };
 
 const Map<AlarmStatus, String> alarmStatusTranslations = {
-  AlarmStatus.ACTIVE_ACK: 'Active Acknowledged',
-  AlarmStatus.ACTIVE_UNACK: 'Active Unacknowledged',
-  AlarmStatus.CLEARED_ACK: 'Cleared Acknowledged',
-  AlarmStatus.CLEARED_UNACK: 'Cleared Unacknowledged',
+  AlarmStatus.ACTIVE_ACK: 'فعال و بررسی شده',
+  AlarmStatus.ACTIVE_UNACK: 'فعال و بررسی نشده',
+  AlarmStatus.CLEARED_ACK: 'پاک شده و بررسی شده',
+  AlarmStatus.CLEARED_UNACK: 'پاک شده و بررس نشده',
 };
 
 mixin AlarmsBase on EntitiesBase<AlarmInfo, AlarmQuery> {
   @override
-  String get title => 'Alarms';
+  String get title => 'هشدار‌ها';
 
   @override
-  String get noItemsFoundText => 'No alarms found';
+  String get noItemsFoundText => 'هشداری پیدا نشد';
 
   @override
   Future<PageData<AlarmInfo>> fetchEntities(AlarmQuery query) {
@@ -54,7 +54,7 @@ mixin AlarmsBase on EntitiesBase<AlarmInfo, AlarmQuery> {
     } else {
       if (tbClient.isTenantAdmin()) {
         showWarnNotification(
-            'Mobile dashboard should be configured in device profile alarm rules!');
+            'داشبورد موبایل باید طبق قوانین هشدار پروفایل دستگاه پیکربندی شود');
       }
     }
   }

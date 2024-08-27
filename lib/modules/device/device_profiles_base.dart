@@ -17,10 +17,10 @@ mixin DeviceProfilesBase on EntitiesBase<DeviceProfileInfo, PageLink> {
   final RefreshDeviceCounts refreshDeviceCounts = RefreshDeviceCounts();
 
   @override
-  String get title => 'Devices';
+  String get title => 'دستگاه‌ها';
 
   @override
-  String get noItemsFoundText => 'No devices found';
+  String get noItemsFoundText => 'دستگاهی یافت نشد';
 
   @override
   Future<PageData<DeviceProfileInfo>> fetchEntities(PageLink pageLink) {

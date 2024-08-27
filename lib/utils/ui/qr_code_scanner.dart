@@ -54,7 +54,7 @@ class _QrCodeScannerPageState extends TbPageState<QrCodeScannerPage> {
             right: 0,
             height: kToolbarHeight,
             child: Center(
-                child: Text('Scan a code',
+                child: Text('اسکن کد',
                     style: TextStyle(color: Colors.white, fontSize: 20)))),
         Positioned(
           child: AppBar(

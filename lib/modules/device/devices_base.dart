@@ -15,10 +15,10 @@ import 'package:thingsboard_client/thingsboard_client.dart';
 
 mixin DevicesBase on EntitiesBase<EntityData, EntityDataQuery> {
   @override
-  String get title => 'Devices';
+  String get title => 'دستگاه‌ها';
 
   @override
-  String get noItemsFoundText => 'No devices found';
+  String get noItemsFoundText => 'دستگاهی یافت نشد';
 
   @override
   Future<PageData<EntityData>> fetchEntities(EntityDataQuery dataQuery) {
@@ -39,7 +39,7 @@ mixin DevicesBase on EntitiesBase<EntityData, EntityDataQuery> {
     } else {
       if (tbClient.isTenantAdmin()) {
         showWarnNotification(
-            'Mobile dashboard should be configured in device profile!');
+            'داشبورد موبایل باید طبق قوانین هشدار پروفایل دستگاه پیکربندی شود');
       }
     }
   }

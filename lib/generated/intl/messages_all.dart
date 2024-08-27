@@ -16,7 +16,7 @@ import 'package:intl/intl.dart';
 import 'package:intl/message_lookup_by_library.dart';
 import 'package:intl/src/intl_helpers.dart';
 
-import 'messages_fa.dart' as messages_per;
+import 'messages_fa.dart' as messages_fa;
 import 'messages_en.dart' as messages_en;
 import 'messages_zh.dart' as messages_zh;
 
@@ -38,7 +38,7 @@ MessageLookupByLibrary? _findExact(String localeName) {
   //   default:
   //     return null;
   // }
-  return messages_per.messages;
+  return messages_fa.messages;
 }
 
 /// User programs should call this before using [localeName] for messages.

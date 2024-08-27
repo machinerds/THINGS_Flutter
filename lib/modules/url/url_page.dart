@@ -36,7 +36,7 @@ class _UrlPageState extends TbPageState<UrlPage> {
         ],
       ),
       body: UniversalPlatform.isWeb
-          ? const Center(child: Text('Not implemented!'))
+          ? const Center(child: Text('!پیاده‌سازی نشده'))
           : InAppWebView(
               initialUrlRequest: URLRequest(
                 url: Uri.parse(widget.url),

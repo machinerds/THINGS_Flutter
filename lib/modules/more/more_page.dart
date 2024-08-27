@@ -170,7 +170,8 @@ class _MorePageState extends TbContextState<MorePage>
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
                   content: Text(
-                    menuItem.disabledReasonMessage ?? 'The item is disabled',
+                    menuItem.disabledReasonMessage ??
+                        'این آیتم غیرفعال شده است',
                   ),
                 ),
               );
@@ -279,14 +280,14 @@ class MoreMenuItem {
                 icon: Icons.track_changes,
                 path: '/auditLogs'),
             MoreMenuItem(
-              title: 'Notifications',
+              title: 'اعلانات',
               icon: Icons.notifications_active,
               path: '/notifications',
               showAdditionalIcon: true,
               additionalIcon: _notificationNumberWidget(tbContext.tbClient),
               disabled: getIt<IFirebaseService>().apps.isEmpty,
-              disabledReasonMessage: 'Notifications are not configured. '
-                  'Please contact your system administrator.',
+              disabledReasonMessage:
+                  '.اعلانات پیکربندی نشده‌اند. لطفاً با مدیر سیستم خود تماس بگیرید',
             ),
           ]);
           break;
@@ -303,8 +304,8 @@ class MoreMenuItem {
               showAdditionalIcon: true,
               additionalIcon: _notificationNumberWidget(tbContext.tbClient),
               disabled: getIt<IFirebaseService>().apps.isEmpty,
-              disabledReasonMessage: 'Notifications are not configured. '
-                  'Please contact your system administrator.',
+              disabledReasonMessage:
+                  '.اعلانات پیکربندی نشده‌اند. لطفاً با مدیر سیستم خود تماس بگیرید',
             ),
           ]);
           break;
@@ -343,7 +344,7 @@ class MoreMenuItem {
             child: FittedBox(
               fit: BoxFit.fitWidth,
               child: Text(
-                '${snapshot.data! > 99 ? '99+' : snapshot.data}',
+                '${snapshot.data! > 99 ? '+99' : snapshot.data}',
                 textAlign: TextAlign.center,
                 style: TextStyle(color: Colors.white),
               ),

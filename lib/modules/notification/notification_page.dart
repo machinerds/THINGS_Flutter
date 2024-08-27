@@ -52,10 +52,10 @@ class _NotificationPageState extends TbPageState<NotificationPage> {
               Platform.isIOS ? Icons.arrow_back_ios : Icons.arrow_back,
             ),
           ),
-          title: const Text('Notifications'),
+          title: const Text('اعلانات'),
           actions: [
             TextButton(
-              child: Text('Mark all as read'),
+              child: Text('همه را به عنوان خوانده شده علامت‌گذاری کن'),
               onPressed: () async {
                 await notificationRepository.markAllAsRead();
 

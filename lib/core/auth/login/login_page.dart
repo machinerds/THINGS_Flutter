@@ -148,7 +148,7 @@ class _LoginPageState extends TbPageState<LoginPage> {
                                               ),
                                               const SizedBox(width: 8),
                                               Text(
-                                                'Scan QR code',
+                                                'QR code اسکن',
                                                 style: TextStyle(
                                                   color: Colors.black,
                                                   fontWeight: FontWeight.w400,

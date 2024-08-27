@@ -153,7 +153,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "systemAdministrator":
             MessageLookupByLibrary.simpleMessage("مدیر سیستم"),
         "tenantAdministrator":
-            MessageLookupByLibrary.simpleMessage("مدیر مستأجر"),
+            MessageLookupByLibrary.simpleMessage("مدیر نمایندگی"),
         "title": MessageLookupByLibrary.simpleMessage("عنوان"),
         "toptAuthPlaceholder": MessageLookupByLibrary.simpleMessage("کد"),
         "totpAuthDescription": MessageLookupByLibrary.simpleMessage(
