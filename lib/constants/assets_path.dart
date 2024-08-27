@@ -7,7 +7,7 @@ abstract class ThingsboardImage {
   static final dashboardPlaceholder = 'assets/images/dashboard-placeholder.svg';
   static final deviceProfilePlaceholder =
       'assets/images/device-profile-placeholder.svg';
-
+  static final dsi = 'assets/images/dsi-logo.svg';
   static final oauth2Logos = <String, String>{
     'google-logo': 'assets/images/google-logo.svg',
     'github-logo': 'assets/images/github-logo.svg',
